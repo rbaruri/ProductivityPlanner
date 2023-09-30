@@ -1,0 +1,55 @@
+/** =================== Montserrat-Alt1 =================== **/
+
+/** Montserrat-Alt1 Black **/
+@font-face {
+    font-family: "Alt1-Black";
+    src: url("../fonts/MontserratAlt1-Black.ttf");
+}
+
+/** Montserrat-Alt1 Bold **/
+@font-face {
+    font-family: "Alt1-Bold";
+    src: url("../fonts/MontserratAlt1-Bold.ttf");
+}
+
+/** Montserrat-Alt1 ExtraBold **/
+@font-face {
+    font-family: "Alt1-ExtraBold";
+    src: url("../fonts/MontserratAlt1-ExtraBold.ttf");
+}
+
+/** Montserrat-Alt1 ExtraLight **/
+@font-face {
+    font-family: "Alt1-ExtraLight";
+    src: url("../fonts/MontserratAlt1-ExtraLight.ttf");
+}
+
+/** Montserrat-Alt1 Light **/
+@font-face {
+    font-family: "Alt1-Light";
+    src: url("../fonts/MontserratAlt1-Light.ttf");
+}
+
+/** Montserrat-Alt1 Medium **/
+@font-face {
+    font-family: "Alt1-Medium";
+    src: url("../fonts/MontserratAlt1-Medium.ttf");
+}
+
+/** Montserrat-Alt1 Regular **/
+@font-face {
+    font-family: "Alt1-Regular";
+    src: url("../fonts/MontserratAlt1-Regular.ttf");
+}
+
+/** Montserrat-Alt1 SemiBold **/
+@font-face {
+    font-family: "Alt1-SemiBold";
+    src: url("../fonts/MontserratAlt1-SemiBold.ttf");
+}
+
+/** Montserrat-Alt1 Thin **/
+@font-face {
+    font-family: "Alt1-Thin";
+    src: url("../fonts/MontserratAlt1-Thin.ttf");
+}
