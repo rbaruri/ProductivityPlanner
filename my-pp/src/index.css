@@ -6,6 +6,11 @@
 .flex{
     width: 70%;
     margin-left: auto;
-    padding-right: 70px;
-    padding-top: 30px;
+    padding-right: 90px;
+    padding-top: 50px;
+}
+.navbar{
+    width: 80%;
+    margin-left: auto;
+
 }
