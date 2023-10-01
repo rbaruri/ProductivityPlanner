@@ -3,7 +3,7 @@ import React from "react";
 const Divider = () => {
   return (
     <>
-    <div className="flex flex-col w-full lg:flex-row">
+    <div className="flex flex-col w-full lg:flex-row mt-20">
       <div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">
         content
       </div>
