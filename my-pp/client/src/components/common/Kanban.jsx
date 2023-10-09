@@ -129,7 +129,7 @@ const Kanban = props => {
         <Button onClick={createSection}>
           Add section
         </Button>
-        <Typography variant='body2' fontWeight='700'>
+        <Typography variant='body1' fontWeight='400'>
           {data.length} Sections
         </Typography>
       </Box>
