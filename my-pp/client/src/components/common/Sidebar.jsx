@@ -79,10 +79,29 @@ const Sidebar = () => {
       open={true}
       sx={{
         width: sidebarWidth,
+<<<<<<< Updated upstream
         height: '100vh',
         '& > div': { borderRight: 'none' }
+=======
+        height: "100vh",
+        "& > div": { borderRight: "none" },
+        zIndex: 1,
+        marginTop: "60px",
+>>>>>>> Stashed changes
       }}
     >
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          padding: "20px 0",
+          borderBottom: "1px solid #ccc",
+        }}
+      >
+        <img src="/your-logo.png" alt="Logo" width="50" height="25" />
+        <Typography variant="h5"></Typography>
+      </Box>
       <List
         disablePadding
         sx={{
@@ -92,6 +111,7 @@ const Sidebar = () => {
         }}
       >
         <ListItem>
+<<<<<<< Updated upstream
           <Box sx={{
             width: '100%',
             display: 'flex',
@@ -100,6 +120,18 @@ const Sidebar = () => {
           }}>
             <Typography variant='body2' fontWeight='700'>
               {user.username}
+=======
+          <Box
+            sx={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <Typography variant="body1" fontWeight="700">
+              Hi, {user.username}! 👋
+>>>>>>> Stashed changes
             </Typography>
             <IconButton onClick={logout}>
               <LogoutOutlinedIcon fontSize='small' />
@@ -162,6 +194,33 @@ const Sidebar = () => {
           </Droppable>
         </DragDropContext>
       </List>
+<<<<<<< Updated upstream
+=======
+      <div>
+        <List>
+          <ListItem>
+            <div
+              className="Logout"
+              onClick={logout}
+              style={{
+                padding: "10px", // Adjust the padding to your preference
+                cursor: "pointer", // Set the cursor to pointer
+                "&:hover": {
+                  backgroundColor: "rgba(255, 255, 255, 0.9)", // Add a background color on hover
+                },
+              }}
+            >
+              <Typography variant="body2" fontWeight="700">
+                Log Out
+                <IconButton>
+                  <LogoutOutlinedIcon fontSize="small" />
+                </IconButton>
+              </Typography>
+            </div>
+          </ListItem>
+        </List>
+      </div>
+>>>>>>> Stashed changes
     </Drawer>
   )
 }
