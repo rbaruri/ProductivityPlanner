@@ -197,8 +197,11 @@ const Sidebar = () => {
       <div>
         <List>
           <ListItem>
-            <Typography variant="body2" fontWeight="700">
-              <IconButton onClick={logout}>
+            <Typography variant="body1" fontWeight="700">
+              <IconButton
+                onClick={logout}
+                sx={{ fontSize: "small", color: "red", fontWeight: "bold" }}
+              >
                 <LogoutOutlinedIcon fontSize="small" />
                 Log Out
               </IconButton>

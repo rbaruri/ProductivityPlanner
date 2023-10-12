@@ -14,9 +14,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Clock from "./Clock";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -32,18 +32,12 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ zIndex: 2, backgroundColor: '#50a2e6' }}>
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            PRODUCTIVITY PLANNER
+      <AppBar position="fixed" sx={{ zIndex: 2, backgroundColor: "#ab1692", display: "flex" }}>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
+          <Typography variant="h6" component="div">
+            ProSync
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
+          <Clock />
         </Toolbar>
       </AppBar>
     </Box>
@@ -51,4 +45,3 @@ function DrawerAppBar(props) {
 }
 
 export default DrawerAppBar;
-// #50a2e6

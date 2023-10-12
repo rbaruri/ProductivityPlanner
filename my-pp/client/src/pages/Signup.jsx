@@ -73,13 +73,22 @@ const Signup = () => {
   };
 
   return (
-    <>
-      <Box component="form" sx={{ mt: 4 }} onSubmit={handleSubmit} noValidate>
+    <Box
+      sx={{
+        maxWidth: "400px",
+        margin: "auto",
+        padding: "20px",
+        borderRadius: "8px",
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+        backgroundColor: "white",
+        textAlign: "center",
+      }}
+    >
+      <h1>Sign Up</h1>
+      <form onSubmit={handleSubmit}>
         <TextField
-          margin="normal"
-          required
+          sx={{ mb: 2 }} // Add margin-bottom for spacing
           fullWidth
-          id="username"
           label="Username"
           name="username"
           type="text"
@@ -88,10 +97,8 @@ const Signup = () => {
           helperText={usernameErrText}
         />
         <TextField
-          margin="normal"
-          required
+          sx={{ mb: 2 }} // Add margin-bottom for spacing
           fullWidth
-          id="password"
           label="Password"
           name="password"
           type="password"
@@ -100,10 +107,8 @@ const Signup = () => {
           helperText={passwordErrText}
         />
         <TextField
-          margin="normal"
-          required
+          sx={{ mb: 2 }} // Add margin-bottom for spacing
           fullWidth
-          id="confirmPassword"
           label="Confirm Password"
           name="confirmPassword"
           type="password"
@@ -115,17 +120,17 @@ const Signup = () => {
           sx={{ mt: 3, mb: 2 }}
           variant="contained"
           fullWidth
-          color="success"
+          color="primary"
           type="submit"
           loading={loading}
         >
-          Signup
+          Sign Up
         </LoadingButton>
-      </Box>
+      </form>
       <Button component={Link} to="/login" sx={{ textTransform: "none" }}>
-        Already have an account? Login
+        Already have an account? Log in
       </Button>
-    </>
+    </Box>
   );
 };
 
