@@ -18,7 +18,7 @@ const boardSchema = new Schema({
   },
   description: {
     type: String,
-    default: `Add description of ypur task here
+    default: `Add description of your task here
     1. Curiosity stabbed the Cat
     2. Let's start...`
   },
