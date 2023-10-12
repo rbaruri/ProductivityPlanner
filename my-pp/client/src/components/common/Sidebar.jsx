@@ -91,8 +91,22 @@ const Sidebar = () => {
         width: sidebarWidth,
         height: "100vh",
         "& > div": { borderRight: "none" },
+        zIndex: 1,
+        marginTop: "60px",
       }}
     >
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          padding: "20px 0",
+          borderBottom: "1px solid #ccc",
+        }}
+      >
+        <img src="/your-logo.png" alt="Logo" width="50" height="25" />
+        <Typography variant="h5"></Typography>
+      </Box>
       <List
         disablePadding
         sx={{
@@ -110,8 +124,8 @@ const Sidebar = () => {
               justifyContent: "space-between",
             }}
           >
-            <Typography variant="body2" fontWeight="700">
-              Hi, {user.username}
+            <Typography variant="body1" fontWeight="700">
+              Hi, {user.username}! 👋
             </Typography>
           </Box>
         </ListItem>
@@ -181,9 +195,19 @@ const Sidebar = () => {
         </DragDropContext>
       </List>
       <div>
-        <Button variant="outlined" color="error" onClick={logout}>
-          LOGOUT
-        </Button>
+        <List>
+          <ListItem>
+            <Typography variant="body1" fontWeight="700">
+              <IconButton
+                onClick={logout}
+                sx={{ fontSize: "small", color: "red", fontWeight: "bold" }}
+              >
+                <LogoutOutlinedIcon fontSize="small" />
+                Log Out
+              </IconButton>
+            </Typography>
+          </ListItem>
+        </List>
       </div>
     </Drawer>
   );

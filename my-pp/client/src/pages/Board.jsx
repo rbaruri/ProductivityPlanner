@@ -146,6 +146,7 @@ const Board = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
+        marginTop:'90px',
         width: '100%'
       }}>
         <IconButton variant='outlined' onClick={addFavourite}>
