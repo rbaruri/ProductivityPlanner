@@ -173,7 +173,7 @@ const Kanban = props => {
                           variant='outlined'
                           size='small'
                           sx={{
-                            color: 'gray',
+                            color: 'green',
                             '&:hover': { color: 'green' }
                           }}
                           onClick={() => createTask(section.id)}
@@ -184,7 +184,7 @@ const Kanban = props => {
                           variant='outlined'
                           size='small'
                           sx={{
-                            color: 'gray',
+                            color: 'red',
                             '&:hover': { color: 'red' }
                           }}
                           onClick={() => deleteSection(section.id)}
@@ -204,7 +204,8 @@ const Kanban = props => {
                                 sx={{
                                   padding: '10px',
                                   marginBottom: '10px',
-                                  cursor: snapshot.isDragging ? 'grab' : 'pointer!important'
+                                  cursor: snapshot.isDragging ? 'grab' : 'pointer!important',
+                                  borderRadius: '100px'
                                 }}
                                 onClick={() => setSelectedTask(task)}
                               >
